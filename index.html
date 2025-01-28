@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="images/f2cc2889559c6813ee4b047316740946.png" alt="Image">
+        </div>
+        <div class="form-container">
+            <span>Welcome back</span>
+            <h3>Login to your account</h3>
+            <form id="loginForm">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="input-box">
+                
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" class="input-box">
+                
+                <div class="remember-container">
+                    <input type="radio" name="remember" id="remember">
+                    <label for="remember">Remember me</label>
+                    <a href="resetpassword.html" class="forgot-password-link">Forgot password?</a>
+                </div>
+                
+                <button class="input-box login-btn">Login now</button>
+                <button class="input-box google-btn">
+                    <img src="images/9af128e66ac7d6d0e573cad6385214d3.png" alt="Google logo">
+                    or sign-in with Google
+                </button>
+                <div id="error-message" class="error-message"></div>
+                
+                <div class="signup-link">
+                    <span>Don't have an account? <a href="signup.html">Join free today</a></span>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
