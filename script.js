@@ -8,8 +8,14 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     } else if (email !== 'sankey901@solutions.com' && password === 'mindset') {
         errorMessage.textContent = 'Invalid email/username';
         errorMessage.style.color = 'red';
-    } else {
+    } 
+      else if (email === 'sankey901@solutions.com' && password !== 'mindset') {
         errorMessage.textContent = 'Invalid password';
+        errorMessage.style.color = 'red';
+      }
+      
+    else {
+        errorMessage.textContent = 'enter username and password ';
         errorMessage.style.color = 'red';
     }
 });
